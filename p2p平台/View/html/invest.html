@@ -1,0 +1,419 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>投资理财</title>
+    <script src="../../Scripts/jquery-1.8.0.js"></script>
+    <script language =javascript src="../../Scripts/index.js"></script>
+    <script language =javascript src="../../Scripts/s.js"></script>
+    <link rel="stylesheet" href="../../css/style.css" />
+    <style>
+        body{background-color: #fff;}
+    </style>
+</head>
+
+<body>
+    <div class="totalbox">
+    <div class="topbanner">
+    <div class="topbox">
+        <div class="top-left">
+           <p>客服热线 400-999-3027  服务时间：09:00 - 17:00</p>
+        </div>
+                <div class="top-right">
+                    <ul>
+                        <li id="note"><a href="#" target="_blank">[消息<span id="note_num">+2</span>]</a></li>
+                        <li><a href="#" target="_blank">[联系客服]</a></li>
+                        <li id="count"><a href="#" target="_blank">[我的账户]</a></li>
+                        <li id="logon-link"><a class="logon-link"  href="logon.html" target="_blank">[登录]</a></li>
+                        <li id="rege-link"><a class="rege-link"  href="registe.html" target="_blank">[注册]</a></li>
+                        <li id="exit"><a class="exit" href="#">[安全退出]</a></li>
+                        <li id="welcome"><span class="welcome">嗨，张小三！</span></li>
+                    </ul>
+                </div>
+    </div>
+    </div>
+    
+            <div class="nav">
+            <div class="navtop">
+                <div class="nav-left">
+                        <div class="nav-left-logo"><img alt="网站logo" src="../../images/weizhongjf.png">
+                        </div>
+                        <div class="nav-left-text">
+                            <p><a href="http://www.fq-china.com" target="_blank">财商财富金融集团</a>
+                            <span>旗下品牌</span></p>
+                        </div>
+
+                </div>
+                <div class="nav-right">
+                    <ul>
+                        <li><a href="index.html" target="_blank" title="首页">首页</a></li>
+                        <li><a href="#" style="color:orangered;" title="我要理财">我要理财</a></li>
+                        <li><a href="#" target="_blank"  title="安全保障">安全保障</a></li>
+                        <li><a href="help.html" target="_blank" title="帮助中心">帮助中心</a></li>
+                        <li><a href="personinfo.html" target="_blank" title="账户中心">账户中心</a></li>
+                        <li><a href="aboutus.html" target="_blank" title="关于我们">关于我们</a></li>
+                    </ul>
+                </div>
+            </div>
+            </div>
+<!--
+        <div class="invest-box">
+        	<div class="invest-box-top">
+            		<div class="invest-box-top-t">
+                    <div class="invest-box-top-t-pic1">
+                    </div>
+                    <h1>产品列表</h1>
+                    <div class="invest-box-top-t-pic2">
+                    </div>
+                    </div>
+                    <div class="invest-box-top-list">
+                       <h3>查询条件</h3>
+                        <ul>
+                        <li><div class="top-list-pic1"></div><span>借款期限：</span><a href="#"id="top-list-a1" class="active">不限</a><a href="#">3个月以下</a><a href="#">3-6个月</a><a href="#">6-12个月</a><a href="#">12个月以上</a></li>
+                        <li><div class="top-list-pic2"></div><span>借款金额：</span><a href="#" class="active">不限</a><a href="#">5万以下</a><a href="#">5-10万元</a><a href="#">10-50万元</a><a href="#">50-100万元</a><a href="#">100万元以上</a></li>
+
+                        </ul>
+                    </div>
+            </div>
+            <div class="invest-box-bot">
+            		<div class="invest-box-bot-t">
+                    <ul><li><a href="#"id="bot-t-a1" style="border-bottom:solid 3px #C33;">进行中的项目</a></li><li><a href="#"id="bot-t-a2" >审核中的项目</a></li><li><a href="#"id="bot-t-a3" >还款中项目</a></li><li><a href="#"id="bot-t-a4" >已完成项目</a></li></ul>
+                    <div style="float:right;margin-right: 50px;"><span>金额</span><div class="invest-up"></div><div class="invest-down"></div></div>
+                    </div>
+             <div class="invest-box-bot-list">
+                    <ul>
+                    	<li><p><span class="sp1">月付宝 A 款 0001 薪理财计划</span></p><p><span class="sp2">预期收益：</span><span class="sp3">10%</span><span class="sp2">总金额</span><span class="sp3">30000</span><span class="sp4">元</span><span class="sp2">期限</span><span class="sp3">12</span><span class="sp4">月</span></p><a href="investdetail-1.html">投标</a></li>
+                        <div class="cen3"><span class="percent">70%</span><div class="cen4"></div></div>
+                         <li><span class="sp1">月付宝 A 款 0001 薪理财计划</span><span class="sp2">预期收益：</span><span class="sp3">10%</span><span class="sp2">总金额</span><span class="sp3">30000</span><span class="sp4">元</span><span class="sp2">期限</span><span class="sp3">12</span><span class="sp4">月</span><a href="#">投标</a></li>
+                         <div class="cen3"><span class="percent">70%</span><div class="cen4"></div></div>
+                       <li><span class="sp1">月付宝 A 款 0001 薪理财计划</span><span class="sp2">预期收益：</span><span class="sp3">10%</span><span class="sp2">总金额</span><span class="sp3">30000</span><span class="sp4">元</span><span class="sp2">期限</span><span class="sp3">12</span><span class="sp4">月</span><a href="#">投标</a></li>
+                         <div class="cen3"><span class="percent">70%</span><div class="cen4"></div></div>
+                    </ul>
+              </div>
+              <div class="invest-box-bot-pg">
+              <div class="invest-box-bot-link">
+              <a href="#" style="display:none;">首页</a><a href="#" style="color:#96f;">1</a><a href="#">下页</a><a href="#">尾页</a>
+              </div>
+              </div>
+		</div>
+
+--><!--top  开始 -->
+        <script>
+            $(function () {
+                $(".rz-con-dl dd").click(function () {
+                    $(this).addClass('rz-con-dd').siblings().removeClass('rz-con-dd');
+                })
+            });
+
+
+        </script>
+        <div class="rz-nav-nav">
+            <div class="rz-nav-con">
+                <div class="touzi-zhiz">  </div>
+                <ul>
+                    <li><a href="/Bid/OLList"  class="tou-hover">项目列表</a></li>
+                    <!--li><a href="/Bid/NewList"  >新手专区</a></li>
+                    <li><a href="/Bid/ActList" >活动专区</a></li-->
+                </ul>
+            </div>
+
+            <div class="rz-content">
+
+                <div class="rz-content-top rz-content-topone">
+
+                    <dl class="rz-con-dl">
+                        <dt>项目期限</dt>
+                        <dd  onclick="setDeline('0')" id="deline_0" class="rz-con-dd">全部</dd>
+                        <dd onclick="setDeline('1')"  id="deline_1">1个月</dd>
+                        <dd onclick="setDeline('3')"  id="deline_3">3个月</dd>
+                        <dd onclick="setDeline('6')"  id="deline_6">6个月</dd>
+                        <dd onclick="setDeline('12')"  id="deline_12">12个月</dd>
+                        <dd onclick="setDeline('24')"  id="deline_24">24个月</dd>
+
+                    </dl>
+
+                    <dl class="rz-con-dl">
+                        <dt>起投金额</dt>
+                        <dd onclick="setMin('0')" id="Min_0" class="rz-con-dd">全部</dd>
+                        <dd onclick="setMin('1')" id="Min_1" >1万</dd>
+                        <dd onclick="setMin('2')" id="Min_2">3万</dd>
+                        <dd onclick="setMin('3')" id="Min_3">5万</dd>
+                        <dd onclick="setMin('4')" id="Min_4">10万</dd>
+                        <dd onclick="setMin('5')" id="Min_5">15万</dd>
+                        <dd onclick="setMin('6')" id="Min_6">20万</dd>
+                    </dl>
+
+                    <dl class="rz-con-dl">
+                        <dt>产品类型</dt>
+                        <dd onclick="setType('0')" id="Type_0" class="rz-con-dd">全部</dd>
+                        <dd onclick="setType('1')" id="Type_1" ><span style="margin-left:20px;">A款</span><img src="../../images/issue.png"  title="A款是指到期一次性还本付息的产品" style=" margin-left:5px;"/></dd>
+                        <dd onclick="setType('2')" id="Type_2" ><span style="margin-left:20px;">B款</span><img src="../../images/issue.png"  title="B款是指每月支付利息，到期还本的产品" style=" margin-left:5px;"/></dd>
+                        <dd onclick="setType('3')" id="Type_3" >其他</dd>
+                    </dl>
+
+
+
+                    <input type="hidden" id="hd_deline" /><input type="hidden" id="hd_Min" /><input type="hidden" id="hd_Type" /><input type="hidden" id="hd_page" value="1" />
+                </div><!--top 结束 -->
+
+
+                <div class="rz-content-bot" id="bid_list_0">
+                <h1>最新项目</h1>
+                <div class="in-display-one" align="center">
+                    <ul>
+                        <li>该条件下未查询出相应的标，请更换搜索条件继续查询，谢谢！</li>
+                    </ul>
+                </div>
+
+                </div>
+
+                <div class="rz-content-bot" id="bid_list_1">
+                    <h1>最新项目</h1>
+
+
+                    <!--  项目列表 开始 -->
+                    <div class="ra-con-list">
+                        <div class="rz-list-left">
+                            <h2>年年升A款&nbsp;&nbsp;
+                                <span>编号A1641516384</span>
+                            </h2>
+                            <ul class="rz-list-ul">
+                                <li class="rz-list-linine" style='margin-left:0px;'>
+                                    产品类型
+                                    <p style='text-indent:1.2em;' class="rzSpanColorT">A</p>
+
+                                </li>
+                                <li class="rz-list-linine">
+                                    起投金额
+                                    <span class="rzSpanColorT">500,000</span>
+
+                                </li>
+                                <li class="rz-list-linine">
+                                    可投金额
+                                    <span class="rzSpanColorT">1,500,000</span>
+
+                                </li>
+                            </ul>
+                            <ul class="rz-con-ultwo">
+                                <li class="rz-list-lissix">
+                                    <a href="investdetail.html" >查看详情</a>
+                                </li>
+
+                            </ul>
+                        </div>
+
+                        <div class="rz-list-right">
+                            <ul>
+                                <li id="jiner_0">
+                                    融资金额
+                                    <span>50000</span>
+                                    元
+                                </li>
+                                <li class="rz-list-liten">
+                                年化收益
+                                    <span style="color:#fd7c38;">7.3%</span>
+                                </li>
+                                <li>
+                                    融资期限
+                                    <span>6</span>
+                                    个月
+                                </li>
+                                <li>
+                                    截至日期
+                                    <span>2015.11.06</span>
+
+                                </li>
+                            </ul>
+
+                        </div>
+                    </div>
+
+                    <div class="ra-con-list">
+                        <div class="rz-list-left">
+                            <h2>年年升B款&nbsp;&nbsp;
+                                <span>编号B1641516384</span>
+                            </h2>
+                            <ul class="rz-list-ul">
+
+                                <li class="rz-list-linine" style='margin-left:0px;'>
+                                    产品类型
+                                    <p style='text-indent:1.2em;' class="rzSpanColorT">B</p>
+
+                                </li>
+                                <li class="rz-list-linine">
+                                    起投金额
+                                    <span class="rzSpanColorT">500,000</span>
+
+                                </li>
+                                <li class="rz-list-linine">
+                                    可投金额
+                                    <span class="rzSpanColorT">1,500,000</span>
+
+                                </li>
+                            </ul>
+                            <ul class="rz-con-ultwo">
+                                <li class="rz-list-lissix-six">
+                                    <a href="#" >查看详情</a>
+                                </li>
+
+                            </ul>
+                        </div>
+
+                        <div class="rz-list-right">
+                            <ul>
+                                <li id="jiner_1">
+                                    融资金额
+                                    <span>50000</span>
+                                    元
+                                </li>
+                                <li class="rz-list-liten">
+                                    年化收益
+                                    <span style="color:#fd7c38;">6.0%</span>
+                                </li>
+                                <li>
+                                    融资期限
+                                    <span>1</span>
+                                    个月
+                                </li>
+                                <li>
+                                    截至日期
+                                    <span>2015.11.06</span>
+
+                                </li>
+                            </ul>
+
+                        </div>
+                    </div>
+
+                    <div class="ra-con-list">
+                        <div class="rz-list-left">
+                            <h2>年年升A款&nbsp;&nbsp;
+                                <span>编号A1641516384</span>
+                            </h2>
+                            <ul class="rz-list-ul">
+
+                                <li class="rz-list-linine" style='margin-left:0px;'>
+                                    产品类型
+                                    <p style='text-indent:1.2em;' class="rzSpanColorT">A</p>
+
+                                </li>
+                                <li class="rz-list-linine">
+                                    起投金额
+                                    <span class="rzSpanColorT">500,000</span>
+
+                                </li>
+                                <li class="rz-list-linine">
+                                    可投金额
+                                    <span class="rzSpanColorT">1,500,000</span>
+
+                                </li>
+                            </ul>
+                            <ul class="rz-con-ultwo">
+                                <li class="rz-list-lissix-six">
+                                    <a href="#" >查看详情</a>
+                                </li>
+
+                            </ul>
+                        </div>
+
+                        <div class="rz-list-right">
+                            <ul>
+                                <li id="jiner_2">
+                                    融资金额
+                                    <span>50000</span>
+                                    元
+                                </li>
+                                <li class="rz-list-liten">
+                                    年化收益
+                                    <span style="color:#fd7c38;">6.5%</span>
+                                </li>
+                                <li>
+                                    融资期限
+                                    <span>3</span>
+                                    个月
+                                </li>
+                                <li>
+                                    截至日期
+                                    <span>2015.11.06</span>
+
+                                </li>
+                            </ul>
+
+                        </div>
+                    </div>
+
+                    <div class="ra-con-list">
+                        <div class="rz-list-left">
+                            <h2>年年升A款&nbsp;&nbsp;
+                                <span>编号A1641516384</span>
+                            </h2>
+                            <ul class="rz-list-ul">
+
+                                <li class="rz-list-linine" style='margin-left:0px;'>
+                                    产品类型
+                                    <p style='text-indent:1.2em;' class="rzSpanColorT">A</p>
+
+                                </li>
+                                <li class="rz-list-linine">
+                                    起投金额
+                                    <span class="rzSpanColorT">500,000</span>
+
+                                </li>
+                                <li class="rz-list-linine">
+                                    可投金额
+                                    <span class="rzSpanColorT">1,500,000</span>
+
+                                </li>
+                            </ul>
+                            <ul class="rz-con-ultwo">
+                                <li class="rz-list-lissix-six">
+                                    <a href="#" >查看详情</a>
+                                </li>
+
+                            </ul>
+                        </div>
+
+                        <div class="rz-list-right">
+                            <ul>
+                                <li id="jiner_3">
+                                    融资金额
+                                    <span>50000</span>
+                                    元
+                                </li>
+                                <li class="rz-list-liten">
+                                    年化收益
+                                    <span style="color:#fd7c38;">6.5%</span>
+                                </li>
+                                <li>
+                                    融资期限
+                                    <span>3</span>
+                                    个月
+                                </li>
+                                <li>
+                                    截至日期
+                                    <span>2015.11.06</span>
+
+
+                                </li>
+                            </ul>
+
+                        </div>
+                    </div>
+                    <!--项目列表 结束 -->
+                </div> <!-- bot   结 束 -->
+
+
+                <div class="fenye" id="fenye_list">
+
+                </div>
+                <script>
+                    setPages(89*5, 8,"fenye_list");//分页
+                </script>
+            </div>
+        </div>
+        <object style="border:0px" type="text/x-scriptlet" data="../shared/footer.html" width=100% height=310></object>
+</div>
+
+
+</body>
+</html>

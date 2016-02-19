@@ -1,0 +1,14 @@
+.select-box{width:1200px;margin:30px auto;}
+.select-box-top{height:30px;position: relative;text-align: center;}
+.select-box-top h2{font-size:20px;color:#44c4f8;height:30px;line-height:30px;}
+.title-span{display: block;font-size:14px;width:95px;text-align:center;height:30px;line-height:30px;border-radius: 8px 8px 0 0;
+position: absolute;top:0;left:0;color:#fff;background: #44c4f8;}
+.select-box-bottom{border:solid 1px #44c4f8;min-height: 80px;}
+.select-table{margin-left: 20px;display: block;}
+.select-table tr{height:40px;}
+.select-table tr td{text-align: center;}
+.select-input{outline: none;width:140px;}
+
+
+.data-box{width:1200px;margin:20px auto;}
+.data-box-top{height:30px;position: relative;text-align: center;}

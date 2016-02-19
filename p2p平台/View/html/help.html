@@ -1,0 +1,417 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>帮助中心</title>
+    <script src="../../Scripts/jquery-1.8.0.js"></script>
+    <script language =javascript src="../../Scripts/index.js"></script>
+    <link rel="stylesheet" href="../../css/style.css" />
+</head>
+
+<body>
+<div class="totalbox">
+<div class="topbanner">
+<div class="topbox">
+    <div class="top-left">
+       <p>客服热线 400-999-3027  服务时间：09:00 - 17:00</p>
+    </div>
+            <div class="top-right">
+            	<ul>
+                    <li id="note"><a href="#" target="_blank">[消息<span id="note_num">+2</span>]</a></li>
+                    <li><a href="#" target="_blank">[联系客服]</a></li>
+                    <li id="count"><a href="#" target="_blank">[我的账户]</a></li>
+                    <li id="logon-link"><a class="logon-link"  href="logon.html" target="_blank">[登录]</a></li>
+                    <li id="rege-link"><a class="rege-link"  href="registe.html" target="_blank">[注册]</a></li>
+                    <li id="exit"><a class="exit" href="#">[安全退出]</a></li>
+                    <li id="welcome"><span class="welcome">嗨，张小三！</span></li>
+				</ul>
+            </div>
+</div>
+</div>
+
+        <div class="nav">
+        <div class="navtop">
+        	<div class="nav-left">
+					<div class="nav-left-logo"><img alt="网站logo" src="../../images/weizhongjf.png">
+                        </div>
+                        <div class="nav-left-text">
+                             <p><a href="http://www.fq-china.com" target="_blank">财商财富金融集团</a>
+                            <span>旗下品牌</span></p>
+                        </div>
+
+            </div>
+            <div class="nav-right">
+            	<ul>
+                    <li><a href="index.html" title="首页">首页</a></li>
+                    <li><a href="invest.html" title="我要理财">我要理财</a></li>
+                    <li><a href="#" title="安全保障">安全保障</a></li>
+                    <li><a href="#" style="color:orangered;" title="帮助中心">帮助中心</a></li>
+                    <li><a href="personinfo.html" title="账户中心">账户中心</a></li>
+                    <li><a href="aboutus.html"  title="关于我们">关于我们</a></li>
+				</ul>
+          	</div>
+  		</div>
+        </div>
+
+<!--div class="help-box">
+		<div class="help-box-top">
+                    <div class="help-box-top-pic1">
+                    </div>
+                    <h1>帮助中心</h1>
+                    <div class="help-box-top-pic2">
+                    </div>
+        </div-->
+<div class="help-box-bot">
+<div class="help-box-botcontainer">
+<div class="help-box-left">
+
+    <div class="help-box-left-t">
+        <h2>常见问题</h2>
+    </div>
+    <ul id="nav-list">
+        <li class="help-on" onclick="navchange(1)"><a>▶&nbsp注册登陆</a></li>
+        <li onclick="navchange(2)"><a>▶&nbsp账户密码</a></li>
+        <li onclick="navchange(3)"><a>▶&nbsp充值</a></li>
+        <li onclick="navchange(4)"><a>▶&nbsp提现</a></li>
+        <li onclick="navchange(5)"><a>▶&nbsp安全认证</a></li>
+        <li onclick="navchange(6)"><a>▶&nbsp消息中心</a></li>
+        <li onclick="navchange(7)"><a>▶&nbsp优惠券</a></li>
+        <li onclick="navchange(8)"><a>▶&nbsp安全保障</a></li>
+    </ul>
+</div>
+
+
+
+<script type="text/javascript">
+
+    $("#nav-list li").mouseover(function(){
+        if($(this).hasClass("help-on")){
+
+        }else{
+            $(this).addClass("li-hover");
+        }
+
+    });
+    $("#nav-list li").mouseleave(function(){
+        $(this).removeClass("li-hover");
+    });
+
+    $("#nav-list li").click(function () {
+
+        $(this).addClass("help-on");
+        $(this).siblings().removeClass("help-on");
+
+    });
+
+    function navchange(index) {
+        $("#nav-" + index).show().siblings().hide();
+    }
+</script>
+
+<div class="help-box-right">
+<div id="nav-1">
+    <ul>
+        <li>
+            <ul>
+                <li class="li-header"><span class="ask"></span>一、注册时，进行手机验证，收不到短信怎么办？</li>
+                <li><span class="answer"></span>1. 请确认手机是否安装短信拦截或过滤软件；</li>
+                <li style="text-indent: 2.6em">2. 请确认手机是否能够正常接收短信（信号问题、欠费、停机等）；</li>
+                <li style="text-indent: 2.6em">3. 短信收发过程中可能会存在延迟，请耐心等待，短信在1分钟内均有效；</li>
+                <li style="text-indent: 2.6em">4. 您还可以联系客服，寻求帮助（400-999-3027）。</li>
+            </ul>
+        </li>
+
+        <li>
+            <ul>
+                <li class="li-header"><span class="ask"></span>二、注册时，个人信息资料必须填写吗？</li>
+                <li><span class="answer"></span>1.不是必须的，但我们建议您在注册时填写，因为，购买理财产品时，完善的个人信息是必须的。</li>
+
+            </ul>
+        </li>
+    </ul>
+</div>
+<div id="nav-2" style="display: none;">
+    <ul>
+        <li>
+            <ul>
+                <li class="li-header"><span class="ask"></span>一、微中金服账户的密码都有哪些？</li>
+                <li ><span class="answer"></span>1.登录密码
+                    登录微中金服、合作账号关联微中金服账号时，需要输入的密码。</li>
+                <li style="text-indent: 2.6em">2.交易密码
+                    退出理财计划、提现时需要输入的密码。
+
+                </li>
+            </ul>
+        </li>
+
+        <li>
+            <ul>
+                <li class="li-header"><span class="ask"></span>二、如何修改登录密码？</li>
+                <li><span class="answer"></span>1.登录微中金服，打开【账户中心】--【安全认证】页面，找到【登录密码】信息栏，点击【修改】，重置登录密码。
+                </li>
+            </ul>
+        </li>
+
+
+        <li>
+            <ul>
+                <li class="li-header"><span class="ask"></span>三、如何修改交易密码？</li>
+                <li><span class="answer"></span>1.登录微中金服，打开【账户中心】--【安全认证】页面，找到【交易密码】信息栏，点击【修改】，重置交易密码。
+                </li>
+            </ul>
+        </li>
+
+        <li>
+            <ul>
+                <li class="li-header"><span class="ask"></span>四、如何找回登录密码？</li>
+                <li><span class="answer"></span>1.打开登录页面，点击【忘记密码】；跳转至【找回密码】页面，可以选择通过绑定邮箱或者绑定手机号找回登录密码。
+                </li>
+            </ul>
+        </li>
+
+    </ul>
+</div>
+<div id="nav-3" style="display: none;">
+    <ul>
+        <li>
+            <ul>
+                <li class="li-header"><span class="ask"></span>一、充值介绍</li>
+                <li><span class="answer"></span>1.可以通过合作的第三方支付平台以及网上银行给账户充值，成功后可以用账户的余额进行理财。
+                    如果通过网上银行支付，需要先开通网上银行功能。
+                </li>
+                <li style="text-indent: 2.6em">2.可以通过选择线下现金充值的方式，提交线下充值订单后，可到自己选择的网点去充值现金。
+                </li>
+            </ul>
+        </li>
+
+        <li>
+            <ul>
+                <li class="li-header"><span class="ask"></span>二、如何申请开通网上银行？</li>
+                <li><span class="answer"></span>1.目前所有商业银行都支持个人网银业务，您只需要携带有效身份证件，到当地您所持银行卡的发卡行任意营业网点，即可申请开通网上银行业务。您还可以到商业银行官网查看个人网上银行详细信息。</li>
+
+            </ul>
+        </li>
+
+        <li>
+            <ul>
+                <li class="li-header"><span class="ask"></span>三、如何给账户充值？</li>
+                <li><span class="answer"></span>1. 登录微中金服，打开【账户中心】页面，点击【我要充值】；</li>
+                <li style="text-indent: 2.6em">2. 选择线上充值，选择充值银行，输入充值金额，进行充值；</li>
+                <li style="text-indent: 2.6em">3. 跳转至银行或者第三方支付页面，按照页面的提示输入银行账户和密码等信息即可完成充值。</li>
+                <li style="text-indent: 2.6em">4.选择线下充值，选择充值网点，输入充值金额，生成订单，去网点充值</li>
+
+            </ul>
+        </li>
+
+        <li>
+            <ul>
+                <li class="li-header"><span class="ask"></span>四、充值限额是多少？</li>
+                <li><span class="answer"></span>1.充值限额是由银行支付限额、第三方支付平台支付限额和用户自己的支付额三者共同决定，取三者最小值。</li>
+
+            </ul>
+        </li>
+    </ul>
+</div>
+<div id="nav-4" style="display: none;">
+    <ul>
+        <li>
+            <ul>
+                <li class="li-header"><span class="ask"></span>一、申请提现后，多久能到账？</li>
+                <li ><span class="answer"></span>1.收到用户提现申请后即对提现进行转账操作，由于不同银行处理速度不同，提现资金将会当天或下个工作日到账（如遇双休日或法定节假日顺延）。如果用户迟迟未收到提现资金，可能为银行卡信息填写有误，银行做正在退票操作，预计会在7个工作日内完成退票，请用户耐心等候。用户还可以联系客服（400-999-3027），寻求帮助。</li>
+
+            </ul>
+        </li>
+
+        <li>
+            <ul>
+                <li class="li-header"><span class="ask"></span>二、提现手续费是多少？</li>
+                <li><span class="answer"></span>1.手续费将作为第三方平台的转账费用。用户会获赠几次免费提现的优惠，之后提现我们将根据提现金额的2‰来收取费用，提现金额小于1000，则固定收取2元的费用。</li>
+
+            </ul>
+        </li>
+
+        <li>
+            <ul>
+                <li class="li-header"><span class="ask"></span>三、如何提现？</li>
+                <li ><span class="answer"></span>1.您可以随时将您在微中金服账户中的可用余额申请提现到您现有的任何一家银行的账号上。注意：请提供申请提现的银行卡账号，并确保该账号的开户人姓名和您在网签平台上提供的身份证上的真实姓名一致，否则无法成功提现。</li>
+
+            </ul>
+        </li>
+
+        <li>
+            <ul>
+                <li class="li-header"><span class="ask"></span>四、提现未到账怎么办？</li>
+                <li><span class="answer"></span>1. 可能是银行卡信息填写有误，银行做退票操作，大概会在7个工作日内完成退票，请用户耐心等候。</li>
+                <li style="text-indent: 2.6em">2. 您还可以联系客服，寻求帮助（400-999-3027）。</li>
+
+
+            </ul>
+        </li>
+
+        <li>
+            <ul>
+                <li class="li-header"><span class="ask"></span>五、为什么会提现失败？</li>
+                <li><span class="answer"></span>造成您提现失败的原因可能有以下几种： </li>
+                <li style="text-indent: 2.6em">1. 银行账号/户名错误，或是账号和户名不符； </li>
+                <li style="text-indent: 2.6em">2. 银行账户冻结或正在办理挂失； </li>
+                <li style="text-indent: 2.6em">3. 省份、城市、开户行等银行信息错误； </li>
+                <li style="text-indent: 2.6em">4. 使用信用卡提现。 </li>
+                <li style="text-indent: 2.6em">如果遇到以上情况，我们会在收到支付机构转账失败的通知后解除您的资金冻结（手续费不退还），请您不必担心资金安全。 </li>
+
+
+            </ul>
+        </li>
+    </ul>
+</div>
+<div id="nav-5" style="display: none;">
+    <ul>
+        <li>
+            <ul>
+                <li class="li-header"><span class="ask"></span>一、为什么要进行安全认证？</li>
+                <li><span class="answer"></span>1.为了保障用户资金的安全性和合同的有效性，微中金服要求所有理财人及借款人必须通过身份证绑定、手机号绑定以及交易密码设置。安全认证的过程简单便捷，微中金服对于所有个人资料均作严格保密。</li>
+
+            </ul>
+        </li>
+
+        <li>
+            <ul>
+                <li class="li-header"><span class="ask"></span>二、如何进行实名认证？</li>
+                <li><span class="answer"></span>1. 用户可以打开【我的微中金服】--【账户中心】--【安全认证】页面，在实名认证信息栏，点击【发起认证】，进行实名认证。</li>
+
+            </ul>
+        </li>
+
+        <li>
+            <ul>
+                <li class="li-header"><span class="ask"></span>三、一个手机号能绑定几个账户？</li>
+                <li><span class="answer"></span>1.目前一个手机号只能绑定一个账户</li>
+
+            </ul>
+        </li>
+
+        <li>
+            <ul>
+                <li class="li-header"><span class="ask"></span>四、身份信息正确，实名认证未通过怎么办？</li>
+                <li><span class="answer"></span>1.可能是由于第三方认证系统没有及时更新您的身份信息导致的。您可以联系客服寻求帮助（400-999-3027）。</li>
+
+            </ul>
+        </li>
+
+        <li>
+            <ul>
+                <li class="li-header"><span class="ask"></span>五、进行实名认证后，能解绑或重新认证吗？</li>
+                <li><span class="answer"></span>1. 用户在网站不可以进行解绑操作；</li>
+                <li style="text-indent: 2.6em">2. 如果账户资金余额为0且没有借款和理财记录的用户，可以联系客服解绑（400-999-3027）。</li>
+
+
+            </ul>
+        </li>
+
+    </ul>
+</div>
+<div id="nav-6" style="display: none;">
+    <ul>
+        <li>
+            <ul>
+                <li class="li-header"><span class="ask"></span>一、这些消息对我有什么用？</li>
+                <li ><span class="answer"></span>1.如果您的账户信息发生变动，我们就会推送消息给您，这些消息与您的账户息息相关，包括账户安全、交易变化、金额变化等等。使您及时收到您账户有关信息的变动情况。
+
+                </li>
+
+            </ul>
+        </li>
+
+        <li>
+            <ul>
+                <li class="li-header"><span class="ask"></span>二、我可以退订一部分消息吗？</li>
+                <li><span class="answer"></span>1.可以退订部分消息。
+                    您可以打开【账户中心】页面，点击【互动管理】--【通知设置】，勾选适合自己的信息推送方式及内容；点击【保存设置】保存设置结果。
+                </li>
+
+            </ul>
+        </li>
+    </ul>
+</div>
+<div id="nav-7" style="display: none;">
+    <ul>
+        <li>
+            <ul>
+                <li class="li-header"><span class="ask"></span>一、优惠券及其使用规则</li>
+
+            </ul>
+        </li>
+
+        <li>
+            <ul>
+                <li class="li-header"><span class="ask"></span>二、什么是优惠券密码，如何获得密码？</li>
+
+            </ul>
+        </li>
+
+        <li>
+            <ul>
+                <li class="li-header"><span class="ask"></span>三、如何使用优惠券</li>
+
+            </ul>
+        </li>
+
+        <li>
+            <ul>
+                <li class="li-header"><span class="ask"></span>四、如何用密码兑换优惠券</li>
+
+            </ul>
+        </li>
+    </ul>
+</div>
+<div id="nav-8" style="display: none;">
+    <ul>
+        <li>
+            <ul>
+                <li class="li-header"><span class="ask"></span>一、本金保障计划</li>
+
+            </ul>
+        </li>
+        <li>
+            <ul>
+                <li class="li-header"><span class="ask"></span>二、法律与政策保障</li>
+
+            </ul>
+        </li>
+
+        <li>
+            <ul>
+                <li class="li-header"><span class="ask"></span>三、账户及隐私安全</li>
+
+            </ul>
+        </li>
+
+        <li>
+            <ul>
+                <li class="li-header"><span class="ask"></span>四、用户的自我保护</li>
+
+            </ul>
+        </li>
+
+        <li>
+            <ul>
+                <li class="li-header"><span class="ask"></span>五、网站相关协议</li>
+
+            </ul>
+        </li>
+    </ul>
+</div>
+</div>
+</div>
+
+    </div>
+<div style="clear:both"></div>
+
+</div>
+
+    <object style="border:0px" type="text/x-scriptlet" data="../shared/footer.html" width=100% height=310></object>
+</div>
+
+
+</body>
+</html>
+

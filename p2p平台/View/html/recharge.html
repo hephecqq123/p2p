@@ -1,0 +1,249 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>充值</title>
+    <script src="../../Scripts/jquery-1.8.0.js"></script>
+    <script  src="../../Scripts/index.js"></script>
+    <script  src="../../Scripts/calendar.js"></script>
+    <script type="text/javascript" src="../../Scripts/geo.js"></script>
+    <link rel="stylesheet" href="../../css/style.css" />
+    <link rel="stylesheet" href="../../css/calendar.css" />
+</head>
+
+<body onload="setup();">
+<div class="totalbox">
+<div class="topbanner">
+<div class="topbox">
+    <div class="top-left">
+       <p>客服热线 400-999-3027  服务时间：09:00 - 17:00</p>
+    </div>
+            <div class="top-right">
+            	<ul>
+                    <li id="note"><a href="#" target="_blank">[消息<span id="note_num">+2</span>]</a></li>
+                    <li><a href="#" target="_blank">[联系客服]</a></li>
+                    <li id="count"><a href="#" target="_blank">[我的账户]</a></li>
+                    <li id="logon-link"><a class="logon-link"  href="logon.html" target="_blank">[登录]</a></li>
+                    <li id="rege-link"><a class="rege-link"  href="registe.html" target="_blank">[注册]</a></li>
+                    <li id="exit"><a class="exit" href="#">[安全退出]</a></li>
+                    <li id="welcome"><span class="welcome">嗨，张小三！</span></li>
+				</ul>
+            </div>
+</div>
+</div>
+
+        <div class="nav">
+        <div class="navtop">
+        	<div class="nav-left">
+					<div class="nav-left-logo"><img alt="网站logo" src="../../images/weizhongjf.png">
+                        </div>
+                        <div class="nav-left-text">
+                             <p><a href="http://www.fq-china.com" target="_blank">财商财富金融集团</a>
+                            <span>旗下品牌</span></p>
+                        </div>
+
+            </div>
+            <div class="nav-right">
+                <ul>
+                    <li><a href="index.html" target="_blank" title="首页">首页</a></li>
+                    <li><a href="invest.html" target="_blank" title="我要理财">我要理财</a></li>
+                    <li><a href="#" target="_blank" title="安全保障" >安全保障</a></li>
+                    <li><a href="help.html" target="_blank" title="帮助中心">帮助中心</a></li>
+                    <li><a href="#"  style="color:orangered;" title="账户中心">账户中心</a></li>
+                    <li><a href="aboutus.html" target="_blank" title="关于我们">关于我们</a></li>
+                </ul>
+          	</div>
+  		</div>
+        </div>
+        
+<div id="trade">
+    <div class="personNav">
+        <div>
+            <a class="personNav-box"  id="personNav-box0" ><img class="personNav-img" src="../../images/account.png"><span class="personNav-box-span">账户概况</span></a></div>
+        <div class="secondNav" id="SecondNav0">
+            <a  class="secondNav-box1" id="secondNav-self" href="personinfo.html">个人信息</a>
+            <a class="secondNav-box1" id="secondNav-safe" href="safetyinfo.html">安全认证</a>
+            <a  class="secondNav-box1" id="secondNav-card" href="mycard.html">银行卡管理</a></div>
+
+        <div> <a class="personNav-box" id="personNav-box1"><img class="personNav-img" src="../../images/wealth.png"><span class="personNav-box-span">资金管理</span></a></div>
+        <div class="secondNav" id="SecondNav1">
+            <a  class="secondNav-box1" id="secondNav-trade" href="traderecord.html">交易记录</a>
+            <a class="secondNav-box1 secondNav-active" id="secondNav-pay">我要充值</a>
+            <a  class="secondNav-box1" id="secondNav-withdraw" href="withdraw.html">我要提现</a>
+            <a  class="secondNav-box1" id="secondNav-invest" href="myfinancing.html">我的理财</a></div>
+
+        <div> <a  class="personNav-box" id="personNav-box2" ><img class="personNav-img" src="../../images/invest.png"><span class="personNav-box-span">投资管理</span></a></div>
+        <div class="secondNav" id="SecondNav2">
+            <a  class="secondNav-box1" id="secondNav-record" href="myincome.html">我的收益</a></div>
+
+        <div><a  class="personNav-box" id="personNav-box3"><img class="personNav-img" src="../../images/ticket.png"><span class="personNav-box-span">优惠券管理</span></a></div>
+        <div class="secondNav" id="SecondNav3">
+            <a  class="secondNav-box1" id="secondNav-redpacket" href="">我的红包</a>
+            <a  class="secondNav-box1" id="secondNav-ticket" href="">我的奖券</a></div>
+
+        <div><a  class="personNav-box" id="personNav-box4"><img class="personNav-img" src="../../images/contract.png"><span class="personNav-box-span">互动管理</span></a></div>
+        <div class="secondNav" id="SecondNav4">
+            <a  class="secondNav-box1" id="secondNav-info" href="">站内信息</a>
+            <a  class="secondNav-box1" id="secondNav-noteset" href="">通知设置</a></div>
+        
+    </div>
+    
+    <div id="tradeCont">
+        	<div id="trade-top">
+            	<div class="personCont-top-box1-img">
+                <img src="" alt="" width="100" height="100">
+                </div>
+                <div class="personCont-top-box1-text">
+                	<h1>张三</h1>
+                    <div class="personCont-top-box1-pic1"></div>
+                    <div style="clear:both"></div>
+                    <p>安全等级</p><div class="personCont-top-box1-pic2"><div class="personCont-top-box1-pic3"></div></div>
+                    <div style="clear:both"></div>
+                    <div class="personCont-top-box1-icon1"></div><div class="personCont-top-box1-icon2"></div><div class="personCont-top-box1-icon3"></div>
+                </div>
+                <div class="personCont-top-box1-account">
+                <p>账户余额：<span>0.00</span></p>
+                <a href="#"class="personCont-top-box1-account-pay">充值</a><a href="#" class="personCont-top-box1-account-wid">提现</a>
+                </div>
+            </div>
+        <script>
+            function addRecharge(){
+                //$("#recharge-form").submit();
+                if( document.getElementById("way1").checked==true){
+                    window.location.assign('http://www.baidu.com');
+                }else if( document.getElementById("way2").checked==true){
+                    $("#recharge-step1").css("display","none");
+                    $("#recharge-step2").css("display","block");
+                }
+            }
+            function xianxiaRecharge(){
+                $("#recharge-step2").css("display","none");
+                $("#recharge-step3").css("display","block");
+            }
+        </script>
+        <div id="recharge-step1" style="display: block;">
+        <form id="recharge-form" action="" method="post">
+        <p class="withdraw-p">充值金额</p>
+        <div class="withdraw-input-put-box">
+            <span>元</span>
+            <input type="text" name="num" id="num" value="" style="text-align:right;width:120px;"/>
+        </div>
+            <!-- 弹窗的错误信息放这个<span>里面 -->
+            <div style="float:left;margin-left:30px;height:30px;margin-top:18px;"><span id="numerror" style="color:Red;line-height:30px;font-size:16px;">最小充值单位1000元</span></div>
+          <div style="clear:both;"></div>
+        <div class="withdraw-box">
+        </div>
+        <p class="withdraw-p">充值方式</p>
+
+        <div class="wrapper" style="margin:18px 0 0 40px;">
+            <div class="box">
+                <input  type="radio" name="way" checked="true" id="way1"><span></span>
+            </div>
+            <label for="way1">线上</label>
+        </div>
+        <div class="wrapper" style="margin:18px 0 0 40px;">
+            <div class="box">
+                <input  type="radio" name="way" id="way2"><span></span>
+            </div>
+            <label for="way2">线下</label>
+        </div>
+
+        <div style="clear:both;"></div>
+        <div class="withdraw-box">
+        </div>
+      <a class="pay-confirm" onclick="addRecharge();">下一步</a>
+        </form>
+        </div>
+        <div id="recharge-step2" style="display: none;" >
+            <form id="xianxia-form" action="" method="post">
+
+            <p class="withdraw-p">预约办理地点</p>
+                <select class="select" name="province" id="s1" style="margin-left: 20px;">
+                    <option></option>
+                </select>
+                <select class="select" name="city" id="s2">
+                    <option></option>
+                </select>
+                <select class="select" name="town" id="s3">
+                    <option></option>
+                </select>
+                <select class="select" name="" id="company">
+
+                </select>
+                <input id="address" name="address" type="hidden" value="" />
+                <!-- 弹窗的错误信息放这个<span>里面 -->
+                <div style="float:left;margin:18px 0 0 20px;">
+                    <span id="spanError" style="color:red;font-size: 14px;width:200px;">错误</span>
+                </div>
+                <div style="clear:both;"></div>
+                <div class="withdraw-box"></div>
+
+
+                <p class="withdraw-p">预约办理时间</p>
+            <div class="withdraw-input-put-box" style="margin-left: 20px;">
+                <input type="text" onclick="ShowCalendar(this, this.value)" name="date" id="myDate" value=""/>
+            </div>
+                <div style="float:left;margin:18px 0 0 40px;">
+                    <span style="width:400px;color:red;">不能为空！</span>
+                </div>
+            <div style="clear:both;"></div>
+            <div class="withdraw-box"></div>
+
+            <p class="withdraw-p" style="text-indent: 2em;">充值方式</p>
+                <select class="select" name="" id="time" style="margin-left: 20px;">
+                    <option>通联pos</option>
+                    <option>现金</option>
+                    <option>转账</option>
+                    <option>待定</option>
+                </select>
+                <div style="float:left;margin:18px 0 0 40px;">
+                    <span style="width:400px;color:red;">不能为空！</span>
+                </div>
+            <div style="clear:both;"></div>
+            <div class="withdraw-box"></div>
+           <a class="pay-confirm" onclick="xianxiaRecharge();">下一步</a>
+            </form>
+        </div>
+        <div id="recharge-step3" style="display: none;" >
+            <p class="withdraw-p" style="text-indent: 1em;">付款人</p><p class="withdraw-p2"><span>张小三</span></p>
+            <div style="clear:both;"></div>
+            <div class="withdraw-box"></div>
+
+            <p class="withdraw-p">身份证号</p><p class="withdraw-p2"><span>420618196805150621</span></p>
+            <div style="clear:both;"></div>
+            <div class="withdraw-box"></div>
+
+            <p class="withdraw-p">付款地点</p><p class="withdraw-p2"><span>xxx省xx市区</span></p>
+            <div style="clear:both;"></div>
+            <div class="withdraw-box"></div>
+
+            <p class="withdraw-p">付款公司</p><p class="withdraw-p2"><span>武汉一公司</span></p>
+            <div style="clear:both;"></div>
+            <div class="withdraw-box"></div>
+
+            <p class="withdraw-p">付款时间</p><p class="withdraw-p2"><span>2015年11月20日</span></p>
+            <div style="clear:both;"></div>
+            <div class="withdraw-box"></div>
+
+            <p class="withdraw-p">订单编号</p><p class="withdraw-p2"><span>AFS1056156786</span></p>
+            <div style="clear:both;"></div>
+            <div class="withdraw-box"></div>
+
+            <p class="withdraw-p">充值金额</p><p class="withdraw-p2"><span>20000元</span></p>
+            <div style="clear:both;"></div>
+            <div class="withdraw-box"></div>
+
+            <a class="pay-confirm" onclick="">确定订单</a>
+            <a class="pay-confirm" style="margin-left: 50px;" onclick="">取消订单</a>
+        </div>
+    </div>    
+    </div>
+    <object style="border:0px" type="text/x-scriptlet" data="../shared/footer.html" width=100% height=310></object>
+
+</div>
+
+
+</body>
+</html>
+
+

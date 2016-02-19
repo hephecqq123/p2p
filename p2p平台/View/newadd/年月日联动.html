@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>年月日联动</title>
+    <script src="../../Scripts/date.js"></script>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+</head>
+<body>
+<form name="form1">
+    <select name="YYYY" onchange="YYYYDD(this.value)">
+        <option value="" selected>请选择 年</option>
+    </select>
+    <select name="MM" onchange="MMDD(this.value)">
+        <option value="" selected>选择 月</option>
+    </select>
+    <select name="DD">
+        <option value="" selected>选择 日</option>
+    </select>
+</form>
+
+
+<script src="js/jquery-1.11.3.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+</body>
+</html>
+<HTML>

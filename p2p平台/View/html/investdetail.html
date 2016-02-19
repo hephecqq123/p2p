@@ -1,0 +1,405 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>投资详情</title>
+    <script src="../../Scripts/jquery-1.8.0.js"></script>
+    <script language =javascript src="../../Scripts/index.js"></script>
+    <link rel="stylesheet" href="../../css/style.css" />
+</head>
+
+<body>
+<div class="totalbox">
+<div class="topbanner">
+<div class="topbox">
+    <div class="top-left">
+       <p>客服热线 400-999-3027  服务时间：09:00 - 17:00</p>
+    </div>
+            <div class="top-right">
+            	<ul>
+                    <li id="note"><a href="#" target="_blank">[消息<span id="note_num">+2</span>]</a></li>
+                    <li><a href="#" target="_blank">[联系客服]</a></li>
+                    <li id="count"><a href="#" target="_blank">[我的账户]</a></li>
+                    <li id="logon-link"><a class="logon-link"  href="logon.html" target="_blank">[登录]</a></li>
+                    <li id="rege-link"><a class="rege-link"  href="registe.html" target="_blank">[注册]</a></li>
+                    <li id="exit"><a class="exit" href="#">[安全退出]</a></li>
+                    <li id="welcome"><span class="welcome">嗨，张小三！</span></li>
+				</ul>
+            </div>
+</div>
+</div>
+
+        <div class="nav">
+        <div class="navtop">
+        	<div class="nav-left">
+					<div class="nav-left-logo"><img alt="网站logo" src="../../images/weizhongjf.png">
+                        </div>
+                        <div class="nav-left-text">
+                             <p><a href="http://www.fq-china.com" target="_blank">财商财富金融集团</a>
+                            <span>旗下品牌</span></p>
+                        </div>
+
+            </div>
+            <div class="nav-right">
+                <ul>
+                    <li><a href="index.html" target="_blank" title="首页">首页</a></li>
+                    <li><a href="invest.html" style="color:orangered;" title="我要理财">我要理财</a></li>
+                    <li><a href="#" target="_blank"  title="安全保障">安全保障</a></li>
+                    <li><a href="help.html" target="_blank" title="帮助中心">帮助中心</a></li>
+                    <li><a href="personinfo.html" target="_blank" title="账户中心">账户中心</a></li>
+                    <li><a href="aboutus.html" target="_blank" title="关于我们">关于我们</a></li>
+                </ul>
+          	</div>
+  		</div>
+        </div>
+<!--
+<div class="invdt-box">
+		<div class="invdt-box-top">
+        		<div class="invdt-box-top-nav">
+                <a href="index.html">首页></a><a href="invest.html">投资理财></a><a href="#">月付宝 A 款</a>
+                </div>
+                <div class="invdt-box-top-cont">
+                		<div class="invdt-box-top-cont-list">
+                                  <ul>
+                    					<li>
+                                        <p><span class="sp1">月付宝 A 款 0001 薪理财计划</span></p>
+                                        <p><span class="sp2">总金额</span><span class="sp2">可投金额</span><span class="sp2">年化收益率</span><span class="sp2">时间期限</span></p>
+                                        <p><span class="sp3">100000.00</span><span class="sp3">30000.00</span><span class="sp3">10%</span><span class="sp3">12个月</span></p>
+                                        </li>
+                        <div class="cen5"><span class="percent">70%</span><div class="cen6"></div></div>
+                        		 </ul>
+                        </div>
+                        
+                        <div  class="invdt-box-top-cont-input">
+                        		<div class="cont-input-txt">
+                                        		<p><span class="sp1">可用余额：</span><span class="sp2">0.00</span><a href="#">余额充值</a></p>
+                                </div>
+                        
+                        		<div class="cont-input-put">                               		
+		                           		<div class="cont-input-put-box">
+                                        <span>元</span>
+                                        <input type="text" name="num" id="num" value=""/>                                       
+                                        </div>
+                                        <a href="#">确定投资</a>
+                                </div>
+                                
+                                <div class="cont-input-txt">
+                                        		<p><span class="sp3">金额大于等于50元，且是100的整数倍</span></p>
+                                </div>
+                        
+                        </div>
+                </div>
+        </div>
+        
+        <div class="invdt-box-bot">
+        		<div class="invdt-box-bot-t">
+                    <ul><li><a href="#"id="bot-t-a1" >理财详情</a></li><li><a href="#"id="bot-t-a2" style="border-top:solid 3px #0CF;background-color:#999;">授证信息</a></li><li><a href="#"id="bot-t-a3" >风控介绍</a></li><li><a href="#"id="bot-t-a4" >投标记录</a></li></ul>
+                    </div>
+        		
+                
+                <div class="invdt-box-bot-pt">
+                		<div class="invdt-box-bot-pic1">
+                        		<div class="bot-pic-txt">
+                                <h2>轻松攒薪，不在月光</h2>
+                                <ul>
+                                	<li>500-20000元，选择每月固定投资金额</li>
+                                    <li>每月固定日期，加入相同金额</li>
+                                    <li>到期后可积攒6000到240000元本金</li>
+                                </ul>
+                                </div>
+                        		<div class="bot-pic-box1">
+                                </div>
+                                
+                        </div>
+                        
+                        <div class="invdt-box-bot-pic2">
+                        		<div class="bot-pic-box2">
+                                </div>
+                                <div class="bot-pic-txt">
+                                <h2>简单涨薪，坐享高收益</h2>
+                                <ul>
+                                	<li>系统自动撮合资金出借投标</li>
+                                    <li>资金高度利用，收益循环复投</li>
+                                    <li>预期年化收益9%以上</li>
+                                </ul>
+                                </div>
+                        </div>
+                        
+                        <div class="invdt-box-bot-pic1">
+                        		<div class="bot-pic-txt">
+                                <h2>多重安全保障措施</h2>
+                                <ul>
+                                	<li>资金分散投资于100%适用本金保障计划的借款</li>
+                                    <li>1亿元风险备用金全程护航</li>
+                                </ul>
+                                </div>
+                        		<div class="bot-pic-box3">
+                                </div>
+                        </div>
+                        
+                        <div class="invdt-box-bot-pic2">
+                        		<div class="bot-pic-box4">
+                                </div>
+                                <div class="bot-pic-txt">
+                                <h2>每月一攒，梦想照进现实</h2>
+                                <ul>
+                                	<li>攒钱是途径，用攒下来的钱孝敬父母，改善衣食住行，实现人生每个愿望才是归宿。</li>
+                                </ul>
+                                </div>
+                        </div>
+                </div>
+
+         </div>
+-->
+
+<!--nav 二级 -->
+<!--mark-list-con -->
+<div class="mark-list-con">
+    <!--项目投标 -->
+    <input type="hidden" id="hd_bono" value="BO201509290002" />
+    <input type="hidden" id="hd_acc">
+    <input type="hidden" id="hd_url">
+
+    <h2 class="markH2">项目信息</h2>
+    <div class="mark-con-one">
+        <!--left -->
+        <div class="mark-one-left">
+            <div class="mark-one-header">
+                <ul>
+                    <li class="mark-liOne" id="bo_status">投标中</li><!--已满标 --><!--已完结 --><!--回款中-->
+
+                    <li class="mark-liThree"  id="bo_mode"><span ></span>&nbsp;线上专享</li>
+                    <li class="mark-liThree"  id="bo_newhands" style="display: none;"><span ></span></li>
+                    <li class="mark-liFous"><h3 id="bo_name">年年升A款&nbsp;&nbsp;
+                        <span>编号A1641516384</span></h3>
+                    </li>
+                </ul>
+                <input id="hd_bo_mode" type="hidden" value="线上专享">
+            </div>
+            <div class="mark-one-centent">
+                <ul>
+                    <li id="jiner">融资金额<span id="bo_amount">50000元</span></li>
+                    <li id="yirongzi">已融资<span id="bo_ramount2">15000元</span></li>
+                    <li  class="qixian">
+                        <dl>
+                        <dt>融资期限<span id="bo_rtime">6个月</span></dt>
+                        <dd ><img src="../../images/issue.png" id = "bo_rtime1" title="6*30天" class="mark-IMG" /></dd>
+                        </dl></li>
+                    <li style="clear:both;">
+                        年化收益
+                        <span class="mark-spanOne" id="bo_rates">7.2%</span>
+                    </li>
+                    <li>债权转让人:<span  id="BOD_FINANCIALCLAIM">朱泽明</span></li>
+                </ul>
+                <ul>
+                    <li>发布时间<span id="bo_time">2015年10月12日</span></li>
+                    <li class="shengyu">
+                        <dl>
+                        <dt>截至日期<span id="bo_ltime">2016年3月12日</span></dt>
+                        <dd ><img src="../../images/issue.png" id = "bo_ltime1" title="此标的最后购买期限" class="mark-IMG" /></dd>
+                        </dl></li>
+                    <li style="clear:both;">还款日期<span id="bo_rtime2">差说明信息</span></li>
+                    <li>还款方式<span >按月付息，到期还本</span></li>
+                    <li style="width:490px;">保证人：<span id="BOD_WARRANTOR">深圳市大汉口网络科技有限公司</span></li>
+                </ul>
+
+            </div>
+
+            <div class="markH3">
+                <ul>
+                    <li>每万元收益<span class="markH3Span" id="dayincome">1.97元/日</span></li>
+                    <li style="color: #669a79;">
+                        <ul>
+                            <li>计算规则</li>
+                            <li class="markSpan" title="10000×年化收益率/360"></li>
+                            </ul>
+                    </li>
+                </ul>
+            </div>
+
+        </div>
+        <!--left -->
+        <!--right -->
+        <div class="mark-one-right">
+            <form action="#" name="form">
+                <ul>
+                    <li class="mark-rightOne">起投金额：<span>50000元</span></li>
+                    <li class="mark-rightOne">投资上限：<span>1000000元</span></li>
+                    <li class="mark-liSixTWO" style="display:none;" id="mestitle"><span>融资已完成，融资金额100,000元</span></li>
+                                                                            <!--标的已完结，融资金额20000元 -->
+                                                                            <!--标的回款中，融资金额20000元 -->
+                    <li class="mark-liSixTWO" style="display:none;" id="focus">您还可以关注</li>
+                    <li class="mark-liSix" style="display:none;" id="focuslink"><a href="investdetail.html" id="qtxm">其他项目</a></li>
+                    <!--li class="markInput" id = "ivamountnumber">您的预期收益为：<span></span></li-->
+                    <li class="mark-liFive" style="">
+                        <input type="text" class="mark-input" id="txt_loan" placeholder=" 请输入1000元为单位的金额" />
+                        <input type="hidden" id="hd_blance" value="">
+                        <input type="hidden" id="hd_alamount" value="">
+                        <span class="mark-inputSpan">元</span>
+                        <ul class="mark-liFive-ul" style="">
+                            <li id = "liAttetion">年化收益率:<span class="markSpanJE" id = "bo_rates1">7.2%</span></li>
+                        </ul>
+                    </li>
+                    <li class="mark-liSixTWO" style="display:none;color:red;font-size: 16px;" id="errorinfo">账户余额不足!</li>
+                    <li class="mark-liSix" style="">
+                        <input type="button" class="mark-sub showboxt" onclick="javascript: Loan();" value="立即投资" />
+                    </li>
+                    <!--li id="hd_bo_modeli">
+                        <span id="bo_mamount2" style="display:none;"></span>
+                    </li-->
+
+                    <li class="bot-list-five" id="no_log"  style="">用户未登录将无法投标，请点击<a href="registe.html" style="color:#29a9df;">[登录]</a></li>
+
+
+                </ul>
+            </form>
+        </div>
+        <!--right -->
+    </div>
+
+
+<!--预约订单 -->
+
+<!--原始债权信息 -->
+<h2 class="markH2 markH2Public">债权信息</h2>
+<div class="mark-centent">
+    <!--项目详情 -->
+    <div class="mark-con-two mark-H4Public">
+        <h4>项目详情</h4>
+        <div class="mark-twoTable">
+            <table border="0">
+                <tr>
+                    <td width="80px">借款性质：</td>
+                    <td id="BOD_LOANTYPE">材料供应商流动资金借款</td>
+                </tr>
+                <tr>
+                    <td>资金用途：</td>
+                    <td id="bo_for">用于新签材料供应合同。</td>
+                </tr>
+                <tr>
+                    <td>还款来源：</td>
+                    <td id="bo_rfrom">按照其材料供应合同，依法应收的材料供应结算款。</td>
+                </tr>
+            </table>
+        </div>
+        <div class="mark-dashed"></div>
+    </div>
+    <!--项目详情 -->
+    <!--风险控制 -->
+    <div class="mark-con-three mark-H4Public">
+        <h4>风险控制</h4>
+        <div class="mark-twoTable">
+            <table border="0">
+                <tr >
+                    <td width="80px">风险评估：</td>
+                    <td id="bo_fxpg">经人行企业征信查询，借款人信用良好，负债比率小，无逾期行为，此次借款主要用于企业扩大经营，其与项目开发商有多年合作关系，双方材料供应款按期结算，应收账款回款正常，同时项目开发商同意以其自持的商业物业提供担保，该商业物业价值经查实可覆盖所借款项，从而进一步保障了还款的确定性。</td>
+                </tr>
+                <tr>
+                    <td>保障措施：</td>
+                    <td id="bo_bzcs">1、借款人以持有的应收账款作质押。<br>
+                        2、担保方以自持商业物业房产的产权证、土地使用权证为该笔借款本息按期兑付承担先行垫付职责。</td>
+                </tr>
+                <tr>
+                    <td>担保方：</td>
+                    <td id="bo_gu">武汉**地产集团发展有限公司连带保证。</td>
+                </tr>
+            </table>
+        </div>
+        <div class="mark-dashed"></div>
+    </div>
+    <!--风险控制 -->
+    <!--借款人信息
+    <div class="mark-con-fous mark-H4Public" id="Individual">
+        <h4>借款人信息</h4>
+        <div class="mark-fousLeft">
+            <dl>
+                <dt>姓&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;别：</dt>
+                <dd id="IN_SEX"></dd>
+            </dl>
+            <dl>
+                <dt>婚姻状况：</dt>
+                <dd id="IN_MARITAL_STATUS"></dd>
+            </dl>
+            <dl>
+                <dt>工作城市：</dt>
+                <dd id="IN_WORK_ADDRESS"></dd>
+            </dl>
+            <dl>
+                <dt>就业单位：</dt>
+                <dd id="IN_COMPANY_TYPE">一般民营企业</dd>
+            </dl>
+            <dl>
+                <dt>公司行业：</dt>
+                <dd id="IN_COMPANY_TRADE">建筑行业</dd>
+            </dl>
+        </div>
+        <div class="mark-fousRight">
+            <dl>
+                <dt>职&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;位：</dt>
+                <dd id="IN_OCCUPATION">股东</dd>
+            </dl>
+            <dl>
+                <dt>年收入 &nbsp;&nbsp;：</dt>
+                <dd id="IN_INCOME">100000元以上</dd>
+            </dl>
+            <dl>
+                <dt>学&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;历：</dt>
+                <dd id="IN_EDUCATION">大专</dd>
+            </dl>
+            <dl>
+                <dt>工作时间：</dt>
+                <dd id="IN_WORK_TIME">30年以上</dd>
+            </dl>
+        </div>
+        <div class="mark-clear"></div>
+        <div class="mark-chapter"></div>
+    </div>
+    借款人信息 -->
+
+    <!--企业信息 -->
+    <div class="mark-con-fousText mark-H4Public"  id="Enterprise">
+        <h4>企业信息</h4>
+        <div class="mark-twoTable ">
+            <table border="0">
+                <tr>
+                    <td>注册资金：</td>
+                    <td id="en_rmoney">10,000,000</td>
+                </tr>
+                <tr>
+                    <td width="90px">成立时间：</td>
+                    <td id="en_rtime">2011年</td>
+                </tr>
+                <tr>
+                    <td>资产净值：</td>
+                    <td id="en_amoney">13,000,000</td>
+                </tr>
+                <tr>
+                    <td>征信记录：</td>
+                    <td id="en_re">良好</td>
+                </tr>
+                <tr>
+                    <td>所属行业：</td>
+                    <td id="en_in">商品流通</td>
+                </tr>
+                <tr>
+                    <td>核心竞争力：</td>
+                    <td id="en_com">企业高管人员有多年的管理经验及业务操作能力，在行业竞争中处于中上游水平。</td>
+                </tr>
+                <tr>
+                    <td >经营情况：</td>
+                    <td id="en_desc">企业长期为房地产开发企业、建筑企业提供原材料供应，现金流充沛。</td>
+                </tr>
+            </table>
+        </div>
+        <div class="mark-clear"></div>
+        <div class="mark-chapterText"></div>
+    </div>
+    <!--企业信息 -->
+</div>
+</div>
+    <object style="border:0px" type="text/x-scriptlet" data="../shared/footer.html" width=100% height=310></object>
+</div>
+
+
+</body>
+</html>

@@ -1,0 +1,188 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>银行卡管理</title>
+    <script src="../../Scripts/jquery-1.8.0.js"></script>
+    <script src="../../Scripts/index.js"></script>
+    <link rel="stylesheet" href="../../css/style.css" />
+
+</head>
+
+<body>
+<div class="totalbox">
+    <div class="topbanner">
+        <div class="topbox">
+            <div class="top-left">
+                <p>客服热线 400-999-3027  服务时间：09:00 - 17:00</p>
+            </div>
+            <div class="top-right">
+                <ul>
+                    <li id="note"><a href="#" target="_blank">[消息<span id="note_num">+2</span>]</a></li>
+                    <li><a href="#" target="_blank">[联系客服]</a></li>
+                    <li id="count"><a href="#" target="_blank">[我的账户]</a></li>
+                    <li id="logon-link"><a class="logon-link"  href="logon.html" target="_blank">[登录]</a></li>
+                    <li id="rege-link"><a class="rege-link"  href="registe.html" target="_blank">[注册]</a></li>
+                    <li id="exit"><a class="exit" href="#">[安全退出]</a></li>
+                    <li id="welcome"><span class="welcome">嗨，张小三！</span></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <div class="nav">
+        <div class="navtop">
+            <div class="nav-left">
+                <div class="nav-left-logo"><img alt="网站logo" src="../../images/logo.png">
+                </div>
+
+            </div>
+            <div class="nav-right">
+                <ul>
+                    <li><a href="index.html" target="_blank" title="首页">首页</a></li>
+                    <li><a href="invest.html" target="_blank" title="我要理财">我要理财</a></li>
+                    <li><a href="#" target="_blank" title="安全保障" >安全保障</a></li>
+                    <li><a href="help.html" target="_blank" title="帮助中心">帮助中心</a></li>
+                    <li><a href="#"  style="color:orangered;" title="账户中心">账户中心</a></li>
+                    <li><a href="aboutus.html" target="_blank" title="关于我们">关于我们</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <div id="trade">
+        <div class="personNav">
+            <div>
+                <a class="personNav-box"  id="personNav-box0" ><img class="personNav-img" src="../../images/account.png"><span class="personNav-box-span">账户概况</span></a></div>
+            <div class="secondNav" id="SecondNav0">
+                <a  class="secondNav-box1" id="secondNav-self" href="personinfo.html">个人信息</a>
+                <a class="secondNav-box1" id="secondNav-safe" href="safetyinfo.html">安全认证</a>
+                <a  class="secondNav-box1 secondNav-active" id="secondNav-card" href="mycard.html">银行卡管理</a></div>
+
+            <div> <a class="personNav-box" id="personNav-box1"><img class="personNav-img" src="../../images/wealth.png"><span class="personNav-box-span">资金管理</span></a></div>
+            <div class="secondNav" id="SecondNav1">
+                <a  class="secondNav-box1" id="secondNav-trade" href="traderecord.html">交易记录</a>
+                <a class="secondNav-box1" id="secondNav-pay" href="recharge.html">我要充值</a>
+                <a  class="secondNav-box1" id="secondNav-withdraw"  href="withdraw.html">我要提现</a>
+                <a  class="secondNav-box1" id="secondNav-invest" href="myfinancing.html">我的理财</a></div>
+
+            <div> <a  class="personNav-box" id="personNav-box2" ><img class="personNav-img" src="../../images/invest.png"><span class="personNav-box-span">投资管理</span></a></div>
+            <div class="secondNav" id="SecondNav2">
+                <a  class="secondNav-box1" id="secondNav-record" href="myincome.html">我的收益</a></div>
+
+            <div><a  class="personNav-box" id="personNav-box3"><img class="personNav-img" src="../../images/ticket.png"><span class="personNav-box-span">优惠券管理</span></a></div>
+            <div class="secondNav" id="SecondNav3">
+                <a  class="secondNav-box1" id="secondNav-redpacket" href="">我的红包</a>
+                <a  class="secondNav-box1" id="secondNav-ticket" href="">我的奖券</a></div>
+
+            <div><a  class="personNav-box" id="personNav-box4"><img class="personNav-img" src="../../images/contract.png"><span class="personNav-box-span">互动管理</span></a></div>
+            <div class="secondNav" id="SecondNav4">
+                <a  class="secondNav-box1" id="secondNav-info" href="">站内信息</a>
+                <a  class="secondNav-box1" id="secondNav-noteset" href="">通知设置</a></div>
+        </div>
+
+        <div id="tradeCont">
+            <div id="trade-top">
+                <div class="personCont-top-box1-img">
+                    <img src="" alt="" width="100" height="100">
+                </div>
+                <div class="personCont-top-box1-text">
+                    <h1>张三</h1>
+                    <div class="personCont-top-box1-pic1"></div>
+                    <div style="clear:both"></div>
+                    <p>安全等级</p><div class="personCont-top-box1-pic2"><div class="personCont-top-box1-pic3"></div></div>
+                    <div style="clear:both"></div>
+                    <div class="personCont-top-box1-icon1"></div><div class="personCont-top-box1-icon2"></div><div class="personCont-top-box1-icon3"></div>
+                </div>
+                <div class="personCont-top-box1-account">
+                    <p>账户余额：<span>0.00</span></p>
+                    <a href="#"class="personCont-top-box1-account-pay">充值</a><a href="#" class="personCont-top-box1-account-wid">提现</a>
+                </div>
+            </div>
+            <script>
+                function addCard(){
+                    $("#setcard1").css("display","none");
+                    $("#setcard2").css("display","none");
+                    $("#setcard3").css("display","block");
+                }
+            </script>
+            <div id="setcard1"  style="display: none;">
+                <p class="withdraw-info">您还未绑定银行卡，请添加。</p>
+                <a class="pay-confirm" style="margin-top: 30px;" onclick="addCard();">添加银行卡</a>
+                <div style="clear:both;"></div>
+                <div class="withdraw-box"></div>
+            </div>
+            <div id="setcard2"   style="display: block;">
+            <a class="withdraw-confirm" onclick="addCard();">添加银行卡</a>
+            <div style="clear:both; height:20px;"></div>
+            <div class="withdraw-box"></div>
+            <p class="withdraw-info">已绑定银行卡</p>
+            <div style="clear:both;"></div>
+            <ul class="withdraw-ul">
+                <li><span>开户行</span><span class="widthdraw-ul-span">广发银行</span><span style="margin-left: 50px;">卡号</span>
+                    <span class="widthdraw-ul-span">************0348</span><span class="widthdraw-maincard">主卡</span>
+
+                </li>
+                <div class="wrapper" style="float:right;margin-top:15px;margin-right:250px;">
+                    <div class="box">
+                        <input  type="radio" checked="checked" name="card" id="card1"><span></span>
+                    </div>
+                </div>
+                <li><span>开户行</span><span class="widthdraw-ul-span">中国工商银行</span><span style="margin-left: 50px;">卡号</span>
+                    <span class="widthdraw-ul-span">622903154265123685</span><span class="widthdraw-card">副卡</span>
+
+                </li>
+                <div class="wrapper" style="float:right;margin-top:15px;margin-right:250px;">
+                    <div class="box">
+                        <input  type="radio" name="card" id="card2"><span></span>
+                    </div>
+                </div>
+                <li><span>开户行</span><span class="widthdraw-ul-span">中国建设银行</span><span style="margin-left: 50px;">卡号</span>
+                    <span class="widthdraw-ul-span">************0759</span><span class="widthdraw-card">副卡</span>
+
+                </li>
+                <div class="wrapper" style="float:right;margin-top:15px;margin-right:250px;">
+                    <div class="box">
+                        <input  type="radio" name="card" id="card3"><span></span>
+                    </div>
+                </div>
+            </ul>
+            <div style="clear:both;"></div>
+
+            <a class="pay-confirm" onclick="" style="margin-left: 100px;">删除</a><a class="pay-confirm" onclick="" style="margin-left: 50px;">设为主卡</a>
+                <div style="clear:both;height:20px;"></div>
+                <div class="withdraw-box"></div>
+            </div>
+            <div id="setcard3" style="display:none;">
+                <p class="withdraw-p">选择开户银行</p>
+
+                    <select style="margin:18px 0 0 40px;height:24px;" name="" id="">
+                        <option>中国农业银行</option>
+                        <option>中国工商银行</option>
+                        <option>中国建设银行</option>
+                    </select>
+
+                <div style="clear:both;"></div>
+                <div class="withdraw-box"></div>
+                <p class="withdraw-p">填写银行卡号</p>
+                    <div class="withdraw-input-put-box">
+                        <input type="text" name="cardcode" id="cardcode" value=""/>
+                    </div>
+                <div style="float:left;margin:18px 0 0 40px;">
+                <span style="width:400px;color:red;">绑定失败！</span>
+                </div>
+                    <div style="clear:both;"></div>
+                    <div class="withdraw-box"></div>
+                <a class="withdraw-confirm" onclick="">确认绑定</a>
+            </div>
+        </div>
+    </div>
+
+    <object style="border:0px" type="text/x-scriptlet" data="../shared/footer.html" width=100% height=310></object>
+</div>
+
+
+</body>
+</html>
+
+

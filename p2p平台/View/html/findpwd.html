@@ -1,0 +1,138 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>密码重置</title>
+    <script src="../../Scripts/jquery-1.8.0.js"></script>
+    <script language =javascript src="../../Scripts/index.js"></script>
+    <link rel="stylesheet" href="../../css/style.css" />
+
+</head>
+
+<body>
+<div class="totalbox">
+<div class="topbanner">
+<div class="topbox">
+    <div class="top-left">
+        <p>客服热线 400-999-3027  服务时间：09:00 - 17:00</p>
+    </div>
+            <div class="top-right">
+            	<ul>
+                    <li id="note"><a href="#" target="_blank">[消息<span id="note_num">+2</span>]</a></li>
+                    <li><a href="#" target="_blank">[联系客服]</a></li>
+                    <li id="count"><a href="#" target="_blank">[我的账户]</a></li>
+                    <li id="logon-link"><a class="logon-link"  href="logon.html" target="_blank">[登录]</a></li>
+                    <li id="rege-link"><a class="rege-link"  href="registe.html" target="_blank">[注册]</a></li>
+                    <li id="exit"><a class="exit" href="#">[安全退出]</a></li>
+                    <li id="welcome"><span class="welcome">嗨，张小三！</span></li>
+				</ul>
+            </div>
+</div>
+</div>
+
+        <div class="nav">
+        <div class="navtop">
+        	<div class="nav-left">
+					<div class="nav-left-logo"><img alt="网站logo" src="../../images/weizhongjf.png">
+                        </div>
+                        <div class="nav-left-text">
+                             <p><a href="http://www.fq-china.com" target="_blank">财商财富金融集团</a>
+                            <span>旗下品牌</span></p>
+                        </div>
+
+            </div>
+            <div class="nav-right">
+            	<ul>
+                    <li><a href="index.html" target="_blank" title="首页">首页</a></li>
+                    <li><a href="invest.html" target="_blank" title="我要理财">我要理财</a></li>
+                    <li><a href="#" target="_blank" title="安全保障" >安全保障</a></li>
+                    <li><a href="help.html" target="_blank" title="帮助中心">帮助中心</a></li>
+                    <li><a href="personinfo.html" target="_blank" title="账户中心">账户中心</a></li>
+                    <li><a href="aboutus.html" target="_blank" title="关于我们">关于我们</a></li>
+				</ul>
+          	</div>
+  		</div>
+        </div>
+
+    <div class="pwdReset" style="padding-bottom: 500px;background-color: #fff;">
+        <div class="logon-box" style="padding-bottom: 40px;">
+            <div style="margin-left:290px;">
+                <div class="pwdReset-title">
+                    <h2>重置密码</h2>
+                    <a id="pwdReset-title-a" href="/Login/Into">账户登录></a>
+                </div>
+
+                <div>
+
+                    <div class="pwdReset-input" style="display: block;float:left;">
+                        <div class="pwdReset-input-ico1"></div>
+                        <input class="pwdReset-box-input" id="txtMoblie" type="text" placeholder="请输入手机号">
+                    </div>
+                    <!--错误信息 -->
+                    <span id="spanError" style="display: block;float:left;margin-top: 25px;margin-left: 10px;color:red;">请输入合法的手机号</span>
+                </div>
+                <div style="clear:both"></div>
+
+
+                <div>
+
+                    <div class="pwdReset-input" style="display: block;float:left;">
+                        <div class="pwdReset-input-ico2"></div>
+                        <input class="pwdReset-box-input" id="zhPass" type="password" placeholder="请输入新密码">
+                    </div>
+                    <!--错误信息 -->
+                    <span id="spanNewPass" style="display: block;float:left;margin-top: 25px;margin-left: 10px;color:red;"></span>
+                </div>
+                <div style="clear:both"></div>
+
+                <div>
+
+                    <div class="pwdReset-input" style="display: block;float:left;">
+                        <div class="pwdReset-input-ico2"></div>
+                        <input class="pwdReset-box-input" id="zhPassAgain" type="password" placeholder="请确认新密码">
+                    </div>
+                    <!--错误信息 -->
+                    <span id="spanNewPassAgain" style="display: block;float:left;margin-top: 25px;margin-left: 10px;color:red;"></span>
+                </div>
+                <div style="clear:both"></div>
+
+                <div>
+
+                    <div class="pwdReset-input2" style="display: block;float:left;">
+                        <div class="pwdReset-input3">
+                            <input id="imgVailCode"  class="yanzheng"  type="text" placeholder="图形验证码">
+                        </div>
+                    </div>
+                </div>
+                <div style="float:left;width:400px;margin:30px 0 0 20px;">
+                    <!--图形在此处显示 -->
+                    <img id="imgPicVaild" src="" class="check-img" alt="图形验证码"/>
+                    <span class="check-success" style="display:none;"></span><span class="check-error" style="display:none;"></span>
+                    <span id="Span4" style="color:red;">请输入合法的手机号</span>
+                </div>
+                <div style="clear:both"></div>
+
+
+                <div>
+                    <div class="pwdReset-input2" style="display: block;float:left;">
+                        <div class="pwdReset-input3">
+                            <input id="VailCode" class="yanzheng"  type="text" placeholder="请输入验证码">
+                        </div>
+                    </div>
+
+                    <div style="float:left;width:400px;margin:30px 0 0 20px;">
+                        <input type="button" onclick="GetValidateCode()" class="check-get" id="validateCode" value="获取验证码" style="color:#39F;"/>
+                        <span id="SpanYz" style="color:red;">请输入合法的手机号</span>
+                    </div>
+                </div>
+                <div style="clear:both"></div>
+                <a onclick="FindPwd();" class="pwdReset-box-a" href="#">重置密码</a>
+            </div>
+            <div class="clearfix"></div>
+        </div>
+
+    </div>
+    <div class="pwdReset-fotbox"><p id="pwdReset-fot">&#169;2015财商宝 ALL RIGHTS RESERVED 财商财富金融集团 京 ICP 证 00000号 京公网安备0000000 京 ICP 备000000号-1</p></div>
+</div>
+</body>
+</html>
